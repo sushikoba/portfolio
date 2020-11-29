@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: サイトURL#">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Haru</title>
+    <!--ここからOGP-->
+    <meta property="og:url" content=" https://sushikoba.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=" Web Design Haru" />
+    <meta property="og:description" content=" ウェブデザインはるのポートフォリオです。
+    ホームページデザイン・コーディングのお仕事のご依頼お待ちしております。
+    低価格でありながら高品質なウェブサイトを責任を持って丁寧に仕上げます。" />
+    <meta property="og:site_name" content="Web Design Haru" />
+    <meta property="og:image" content="/img/me.jpg" />
+    <!--//OGPここまで-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+   	<link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css"> 
+</head>
+<body>
+
+<!-----ヘッダー------>
+    <header>
+        <!-----PCナビメニュー------>
+        <div class="header">
+            <div class="header-right">
+                <a class="header-right-btn link-btn" href="./Contact/contact.html">Contact</a>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                        <li class="header-nav-list-item"><a class="scroll-btn" href="#navAbout">ABOUT</a></li>
+                        <li class="header-nav-list-item"><a class="scroll-btn" href="#navService">SERVICE</a></li>
+                        <li class="header-nav-list-item"><a class="scroll-btn" href="#navWorks">WORKS</a></li>
+                </ul>
+            </nav> 
+        </div>
+
+        <!-----PCバーガーwrap----->
+        <div class="pc-burger-wrapper">
+            <!-----PCバーガー----->
+            <div class="pc-burger">
+                <a href="#">
+                    <span class="bar bar-top"></span>
+                    <span class="bar bar-mid"></span>
+                    <span class="bar bar-bottom"></span>
+                </a>
+            </div>
+
+            <!-----PCバーガーメニュー----->
+            <div class="pc-open-wrapper" id="nav-open-pc">
+                <div class="pc-open-100">
+                    <div class="pc-open-60"></div>
+                    <div class="pc-menu">
+                    <ul class="pc-menu-li">
+                            <li class="pc-menu-item"><a class="scroll-btn" href="#navAbout">ABOUT</a></li>
+                            <li class="pc-menu-item"><a class="scroll-btn" href="#navService">SERVICE</a></li>
+                            <li class="pc-menu-item"><a class="scroll-btn" href="#navWorks">WORKS</a></li>
+                    </ul>
+                    <div class="pc-menu-contact">
+                        <a class="pc-menu-contact-btn link-btn" href="./Contact/contact.html">Contact</a>
+                    </div>
+                    </div>
+                </div>     
+            </div>
+
+        </div>
+        <!-----//PCバーガーwrap----->
+
+        <!-----SPバーガー----->
+        <div class="sp-burger">
+            <a href="#">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bottom"></span>
+            </a>
+        </div>
+
+        <!-----SPバーガーメニュー----->
+        <div class="sp-open-wrapper" id="nav-open-sp">
+            <div class="sp-menu">
+                <ul class="sp-menu-li">
+                        <li class="sp-menu-item"><a class="scroll-btn" href="#navAbout">ABOUT</a></li>
+                        <li class="sp-menu-item"><a class="scroll-btn" href="#navService">SERVICE</a></li>
+                        <li class="sp-menu-item"><a class="scroll-btn" href="#navWorks">WORKS</a></li>
+               </ul>
+                <div class="sp-menu-contact">
+                    <a class="sp-menu-contact-btn" href="./Contact/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+<!-----FV------>
+        <section class="fv">
+            <div class="fv-text">
+                <h1>WEB<br>DESIGN<br>HARU</h1><br>
+                <h3>Having a project? <br>
+                <span>Let's Talk!</span></h3>
+            </div>
+            <a href="#navAbout" class="arrow"></a>
+        </section>
+
+<!-----ABOUT------>
+        <section class="about" id="navAbout">
+            <div class="about-contents">
+                <h1 class="about-contents-ttl ttl">ABOUT ME</h1>
+                <!-----スライダー------>
+                <div class="slider">
+                    <!-----スライド１/ プロフィール------>
+                    <div class="slider-item">
+                        <h6>Profile</h6>
+                        <hr>
+                        <ul>
+                            <li >名前: Tomoko</li>
+                            <li>生年月日: 1992年1月14日</li>
+                            <li>出身地: 名古屋市</li>
+                        </ul>
+                    </div>
+                    <!-----スライド２ / エクスペリエンス------>
+                    <div class="slider-item">
+                        <h6>Experience</h6>
+                        <hr>
+                        <ul>
+                            <li>出身大学: 慶應義塾大学</li>
+                            <li>看護師歴: 2年8か月</li>
+                            <li>海外フリーランス歴: 2018年6月〜</li>
+                            <li>Webデザイナー歴: 2020年5月〜</li>
+                        </ul>
+                    </div>
+                    <!-----スライド３ / その他------>
+                    <div class="slider-item">
+                        <h6>Others</h6>
+                        <hr>
+                        <ul>
+                            <li>Likes: 動物 / 映画 / アニメ  / アート / 料理 / 裁縫</li>
+                            <li>ペット: 猫２匹</li>
+                            <li>言語: 日本語 / 英語 / 少しイタリア語</li>
+                        </ul>
+                    </div>
+                    <!-----スライド４ / メッセージ------>
+                    <div class="slider-item">
+                        <h6>Message</h6>
+                        <hr>
+                       
+                        <p>学生の頃からアートが好きでデザインに関わる仕事ができることに誇りに思います。<br>
+                            コーディングはスクールなど通わず独学で学習してきました。
+                        </p>
+                        <p>どのような分野のウェブ制作のお手伝いをさせていただくことは可能ですが、<br>
+                        私の経験を活かせる、かつ知識にも自信がある美容外科等含め医療/介護系、留学や英会話スクール等の外国語系を得意としています。
+                        </p>
+                        <p>お気軽にご相談ください。</p>
+                       
+                    </div>
+                </div>
+                <!-----//スライダー------>
+            </div>
+            <div class="about-box"></div>
+            <div class="about-img">
+                <img src="./img/me.jpg" alt="">
+            </div>
+        </section>
+
+<!-----SERVICE------>
+        <section class="service" id="navService">
+            <div class="service-contents">
+                <h1 class="service-contents-ttl ttl">SERVICE</h1>
+                <div class="service-contents-group">
+                    <!-----CODING------>
+                    <div class="service-contents-group-coding">
+                        <h5>CODING</h5>
+                        <hr>
+                        <p>デザインデータから、HTML/CSSコーディングを行います。
+                            JavaScript(jQuery)を使用して動きをつけることも可能です。
+                            <br>モバイルサイズのデザインにも対応しております。
+                        </p>
+                        <p class="price">1P  ¥ 10,000〜 (コーディングのみ)</p> 
+                    </div>
+                    <!-----WEB DESIGN------>
+                    <div class="service-contents-group-design">
+                        <h5>WEB DESIGN</h5>
+                        <hr>
+                        <p>制作するサイトの目的に合わせてデザイン作成・コーディングします。
+                            画像編集も対応可能です。<br>デザインのみも可能です。
+                        <br><br><br></p>
+                        <p class="price">1P ¥ 30,000〜 (デザイン＋コーディング)</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+<!-----WORKS------>
+        <section class="works">
+            <div class="works-contents" id="navWorks">
+                <h1 class="works-contents-ttl ttl">WORKS</h1>
+                <ul class="works-contents-list">
+                    <li class="works-contents-list-item">
+                        <img src="./img/portfolio-btn.jpg" alt="">
+                    </li>
+                    <li class="works-contents-list-item">
+                        <img src="./img/salon-btn.jpg" alt="">
+                    </li>
+                    <li class="works-contents-list-item">
+                        <img src="./img/home-btn.jpg" alt="">
+                    </li>
+                    <li class="works-contents-list-item">
+                        <img src="./img/digsmile-btn.jpg" alt="">
+                    </li>
+                    <li class="works-contents-list-item">
+                        <img src="./img/cresta-btn.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+<!-----CONTACT------>
+        <section class="contact">
+            <div class="contact-contents">
+                <h1 class="contact-contents-ttl ttl">CONTACT</h1>
+                <div class="contact-contents-btns">
+                    <div class="contact-contents-btns-btn">
+                    <a class="link-btn" href="./Contact/contact.html">
+                        <i class="far fa-envelope"></i>お問い合わせフォーム
+                    </a>
+                    </div>
+                    <div class="contact-contents-btns-btn">
+                    <a class="link-btn" href="https://www.twitter.com/tkgandgyo">
+                        <i class="fa fa-twitter"></i>ダイレクトメッセージ
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!-----FOOTER------>
+<footer>
+	<hr>
+	<div class="sns">
+		<a href="https://www.twitter.com/tkgandgyo"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="#" id="pageTop"><i class="fa fa-chevron-up"></i></a>
+    </div>
+	
+	<p>&copy; 2020 Haru All Rights Reserved.</p>
+</footer>
+
+</body>
+<script src="https://kit.fontawesome.com/46153b19c3.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

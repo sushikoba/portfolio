@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>Contact |  Web Design Haru</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta property="og:url" content=" https://sushikoba.github.io/portfolio/contact/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content=" Web Design Haru" />
+<meta property="og:description" content=" ウェブデザインはるのポートフォリオです。
+ホームページデザイン・コーディングのお仕事のご依頼お待ちしております。
+低価格でありながら高品質なウェブサイトを責任を持って丁寧に仕上げます。" />
+<meta property="og:site_name" content="Web Design Haru" />
+<meta property="og:image" content="/img/contact-img.jpg" />
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+<style>
+body{
+	color: #FEFEFE;
+	background: #070506;
+}
+
+</style>
+<link rel="stylesheet" href="css/mailform.css" />
+
+<!-- ご希望の日時選択ライブラリここから -->
+<link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+<!-- ご希望の日時選択ライブラリここまで -->
+</head>
+<body>
+<div class="contact">
+	<a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+	<h1>CONTACT</h1>
+	<p>24時間以内に返信いたします。お気軽にご連絡ください。</p>
+</div>
+
+
+<div class="form-wrapper">
+	<form action="./php/mailform.php" method="post" id="mail_form">
+		<dl>
+		
+			<dd class="required"><input type="text" id="name_1" name="name_1" value="" placeholder="Name"/></dd>
+			
+			<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" placeholder="E-mail"/></dd>
+			
+			<dd class="required"><textarea id="contents" name="contents" cols="40" rows="5" placeholder="お問い合わせ内容"></textarea></dd>
+			
+		</dl>
+		
+		<p id="form_submit"><input type="button" id="form_submit_button" value="SEND" /></p>
+	</form>
+</div>
+
+<footer>
+	<hr>
+	<div class="sns">
+		<a href="https://www.twitter.com/tkgandgyo"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+	</div>
+	
+	<p>&copy; 2020 Haru All Rights Reserved.</p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/mailform-js.php"></script>
+
+
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( '#name_1', '#read_1', {
+			katakana: false
+		});
+		$.fn.autoKana( '#name_2', '#read_2', {
+			katakana: false
+		});
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
+
+
+<!-- 住所自動入力ライブラリここから -->
+<script src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- ご希望の日時選択ライブラリここから -->
+<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	(function( $ ) {
+		$( 'input#schedule' ).datetimepicker({
+			lang: 'ja'
+		});
+	})( jQuery );
+</script>
+<!-- ご希望の日時選択ライブラリここまで -->
+
+<script src="https://kit.fontawesome.com/46153b19c3.js" crossorigin="anonymous"></script>
+</body>
+</html>

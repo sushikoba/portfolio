@@ -1,0 +1,81 @@
+@media screen and (max-width: 600px) {
+  $color-purple: #3e0c71;
+  $color-light-purple: #a17fe0;
+  $color-black: #070506;
+  $color-white: #fefefe;
+
+  /********************
+            ヘッダー
+*********************/
+
+  /***** PC ヘッダー非表示 ******/
+  .header {
+    display: none;
+  }
+
+  /***** SPバーガーボタン表示 ******/
+  .sp-burger {
+    display: block;
+    z-index: 300;
+    padding: 30px 58px;
+    background-color: $color-black;
+    position: relative;
+
+    .bar {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background-color: $color-white;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .bar-top,
+    .bar-mid {
+      margin-bottom: 5px;
+    }
+
+    /***** バーガーボタンをクロスに
+            JSでクラスcross追加される ******/
+    &.cross {
+      .bar-top {
+        transform: rotate(40deg) translate(0px, 9px);
+      }
+      .bar-mid {
+        opacity: 0;
+      }
+      .bar-bottom {
+        transform: rotate(-40deg) translate(0px, -9px);
+      }
+    }
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  /***** SPバーガーナビ内 *****/
+  .sp-open-wrapper {
+    display: none;
+    height: 100vh;
+    z-index: 200;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-black;
+    opacity: 0.95;
+    text-align: center;
+
+    .sp-menu {
+      padding-top: 20%;
+
+      &-li {
+        list-style: none;
+      }
+      &-item {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+}

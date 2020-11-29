@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@media screen and (max-width: 600px) {
+  /********************
+            ヘッダー
+*********************/
+  /***** PC ヘッダー非表示 ******/
+  .header {
+    display: none;
+  }
+  /***** SPバーガーボタン表示 ******/
+  .sp-burger {
+    display: block;
+    z-index: 300;
+    padding: 30px 58px;
+    background-color: #070506;
+    position: relative;
+    /***** バーガーボタンをクロスに
+            JSでクラスcross追加される ******/
+  }
+  .sp-burger .bar {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #fefefe;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .sp-burger .bar-top,
+  .sp-burger .bar-mid {
+    margin-bottom: 5px;
+  }
+  .sp-burger.cross .bar-top {
+    -webkit-transform: rotate(40deg) translate(0px, 9px);
+            transform: rotate(40deg) translate(0px, 9px);
+  }
+  .sp-burger.cross .bar-mid {
+    opacity: 0;
+  }
+  .sp-burger.cross .bar-bottom {
+    -webkit-transform: rotate(-40deg) translate(0px, -9px);
+            transform: rotate(-40deg) translate(0px, -9px);
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  /***** SPバーガーナビ内 *****/
+  .sp-open-wrapper {
+    display: none;
+    height: 100vh;
+    z-index: 200;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #070506;
+    opacity: 0.95;
+    text-align: center;
+  }
+  .sp-open-wrapper .sp-menu {
+    padding-top: 20%;
+  }
+  .sp-open-wrapper .sp-menu-li {
+    list-style: none;
+  }
+  .sp-open-wrapper .sp-menu-item {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
