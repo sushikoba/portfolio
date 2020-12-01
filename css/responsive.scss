@@ -314,9 +314,19 @@
      &-list-item {
        margin-top: 25px;
      }
-   }
-   /* modal */
-
+        /* modal */
+     .modal-inner-img{
+        &-pc{
+          width: 270px;
+        }
+        &-tb{
+          width: 120px;
+        }
+        &-sp{
+          width: 75px;
+        }
+      }
+    }
 }
   /********************
              contact
