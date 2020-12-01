@@ -1,21 +1,122 @@
 @charset "UTF-8";
+@media screen and (max-width: 960px) {
+  /********************
+            ヘッダー
+  *********************/
+  .header {
+    padding: 30px 20px;
+  }
+  .header-nav-list {
+    width: 400px;
+  }
+  /********************
+            about
+  *********************/
+  .about {
+    display: unset;
+  }
+  .about-sp {
+    display: block;
+  }
+  .about-sp-img {
+    padding-left: 18px;
+    z-index: 10;
+    position: relative;
+  }
+  .about-sp-box {
+    height: 270px;
+    background-color: #3e0c71;
+    opacity: 0.5;
+    margin: -200px 0 0 auto;
+  }
+  .about-contents {
+    background: url("../img/about-bg.jpg") no-repeat;
+    background-size: cover;
+  }
+  .about-contents-ttl {
+    padding-left: 60px;
+    padding-top: 90px;
+  }
+  .about-contents .slider-item {
+    height: 400px !important;
+    margin-right: 55px;
+  }
+  .about-box, .about-img {
+    /* PC用非表示 */
+    display: none;
+  }
+  /********************
+            service
+  *********************/
+  .service {
+    margin-top: 130px;
+    background: url("../img/service.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .service-contents {
+    margin: 0;
+    max-width: unset;
+  }
+  .service-contents-ttl {
+    padding-left: 60px;
+  }
+  .service-contents-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-contents-group-coding, .service-contents-group-design {
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px #070506;
+    width: 470px;
+  }
+  .service-contents-group-design {
+    margin-top: 50px;
+  }
+  /********************
+            works
+  *********************/
+  .works-contents {
+    width: 70%;
+  }
+  /********************
+            contact
+  *********************/
+  .contact-contents {
+    width: 70%;
+  }
+  /********************
+            footer
+  *********************/
+  footer p {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .ttl {
+    font-size: 28px;
+  }
   /********************
             ヘッダー
 *********************/
-  /***** PC ヘッダー非表示 ******/
-  .header {
+  /* PC ヘッダー非表示 */
+  .header, .pc-burger-wrapper {
     display: none;
   }
-  /***** SPバーガーボタン表示 ******/
+  /* SPバーガーボタン表示 */
   .sp-burger {
     display: block;
     z-index: 300;
-    padding: 30px 58px;
-    background-color: #070506;
-    position: relative;
-    /***** バーガーボタンをクロスに
-            JSでクラスcross追加される ******/
+    padding: 20px 18px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* バーガーボタンをクロスに
+            JSでクラスcross追加される */
   }
   .sp-burger .bar {
     display: block;
@@ -24,6 +125,8 @@
     background-color: #fefefe;
     margin-right: 0;
     margin-left: auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
   }
   .sp-burger .bar-top,
   .sp-burger .bar-mid {
@@ -40,10 +143,7 @@
     -webkit-transform: rotate(-40deg) translate(0px, -9px);
             transform: rotate(-40deg) translate(0px, -9px);
   }
-  .no-scroll {
-    overflow: hidden;
-  }
-  /***** SPバーガーナビ内 *****/
+  /* SPバーガーナビ内 */
   .sp-open-wrapper {
     display: none;
     height: 100vh;
@@ -60,11 +160,109 @@
     padding-top: 20%;
   }
   .sp-open-wrapper .sp-menu-li {
-    list-style: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-40%);
+            transform: translateX(-50%) translateY(-40%);
   }
   .sp-open-wrapper .sp-menu-item {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 20px;
+  }
+  .sp-open-wrapper .sp-menu-contact {
+    margin-top: 70px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .sp-open-wrapper .sp-menu-contact-btn {
+    font-size: 20px;
+    padding: 12px 60px;
+  }
+  /********************
+            fv
+*********************/
+  .fv {
+    margin: 20px auto 0;
+  }
+  .fv-text h1 {
+    font-size: 40px;
+  }
+  .fv-text h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  /********************
+            about
+  *********************/
+  .about-sp-box {
+    height: 140px;
+    margin: -100px 0 0 auto;
+  }
+  .about-contents-ttl {
+    padding-left: 20px;
+  }
+  .about-contents .slider-item {
+    height: 470px !important;
+    margin-right: 15px;
+  }
+  .about-contents .slider-item h6 {
+    font-size: 13px;
+  }
+  .about-contents .slider-item hr {
+    width: 90%;
+  }
+  .about-contents .slider-item ul,
+  .about-contents .slider-item p {
+    font-size: 12px;
+  }
+  /********************
+             service
+  *********************/
+  .service {
+    background-size: cover;
+    margin-top: 0;
+    padding: 0;
+  }
+  .service-contents {
+    padding: 100px 0;
+  }
+  .service-contents-ttl {
+    padding-left: 20px;
+  }
+  .service-contents-group-coding, .service-contents-group-design {
+    width: 280px;
+  }
+  .service-contents-group-coding h5, .service-contents-group-design h5 {
+    font-size: 16px;
+  }
+  .service-contents-group-coding p, .service-contents-group-design p {
+    font-size: 13px;
+  }
+  /********************
+             works
+  *********************/
+  .works {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  .works-contents {
+    width: 80%;
+  }
+  .works-contents-list-item {
+    margin-top: 25px;
+  }
+  /********************
+             contact
+  *********************/
+  .contact {
+    padding: 60px 0 100px;
+  }
+  .contact-contents {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

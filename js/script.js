@@ -108,6 +108,51 @@ $(function () {
     slidesToShow: 1,
   });
 
+ /*************  モダル  **************/
+ // 各５つの.modal-btnクリック時
+ // html内でdata-targetに設定されている各モダルを開く（fadeIn）
+ // bodyにno-scrollクラスを追加
+ $('.modal-btn').each(function(){
+    $(this).on('click',function(){
+        var target = $(this).data('target');
+        var modal = document.getElementById(target);
+        $(modal).fadeIn();
+        $('body').addClass('no-scroll');
+        return false;
+    });
+});
+
+// モダルが開いている時.modal-closeをクリックした時
+// モダル自体閉じる（fadeOut）
+// bodyからno-scrollクラスを取る
+$('.modal-close').on('click',function(){
+    $('.modal-style').fadeOut();
+    $('body').removeClass('no-scroll');
+    return false;
+}); 
+
+// モダルが開いている時モダル自体をクリックした時
+// モダル自体閉じる（fadeOut）
+// bodyからno-scrollクラスを取る
+ $('.modal-style').click( function(){
+    $(this).fadeOut();
+    $('body').removeClass('no-scroll');
+  } );
+
+// ただし、インナー部分をクリックしたときはモダルを閉じさせない。
+  $( '.modal-inner' ).on( 'click', function( e ){
+    e.stopPropagation();
+  } );
+
+  // inner内のリンクをクリックした時
+  // モダル自体閉じる（fadeOut）
+  // bodyからno-scrollクラスを取る
+  $('.modal-inner-contents-link').click( function(){
+    $('.modal-style').fadeOut();
+    $('body').removeClass('no-scroll');
+  } );
+  
+
   /************** Scroll to TOP **************/
   $("#pageTop").click(function () {
     $("body,html").animate(

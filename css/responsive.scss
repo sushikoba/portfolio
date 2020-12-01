@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
   $color-purple: #3e0c71;
   $color-light-purple: #a17fe0;
   $color-black: #070506;
@@ -6,20 +6,141 @@
 
   /********************
             ヘッダー
+  *********************/
+  .header {
+    padding: 30px 20px;
+
+    &-nav-list {
+      width: 400px;
+    }
+  }
+
+  /********************
+            about
+  *********************/
+  .about {
+    display: unset;
+
+    &-sp {
+      display: block;
+
+      &-img {
+        padding-left: 18px;
+        z-index: 10;
+        position: relative;
+      }
+
+      &-box {
+        height: 270px;
+        background-color: $color-purple;
+        opacity: 0.5;
+        margin: -200px 0 0 auto;
+      }
+    }
+
+    &-contents {
+      background: url("../img/about-bg.jpg") no-repeat;
+      background-size: cover;
+
+      &-ttl {
+        padding-left: 60px;
+        padding-top: 90px;
+      }
+
+      .slider {
+        &-item {
+          height: 400px !important;
+          margin-right: 55px;
+        }
+      }
+    }
+
+    &-box,
+    &-img {
+      /* PC用非表示 */
+      display: none;
+    }
+  }
+
+  /********************
+            service
+  *********************/
+  .service {
+    margin-top: 130px;
+    background: url("../img/service.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &-contents {
+      margin: 0;
+      max-width: unset;
+
+      &-ttl {
+        padding-left: 60px;
+      }
+
+      &-group {
+        flex-direction: column;
+
+        &-coding,
+        &-design {
+          margin: 0 auto;
+          text-shadow: 1px 1px 5px $color-black;
+          width: 470px;
+        }
+        &-design {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+  /********************
+            works
+  *********************/
+  .works-contents {
+    width: 70%;
+  }
+  /********************
+            contact
+  *********************/
+  .contact-contents {
+    width: 70%;
+  }
+  /********************
+            footer
+  *********************/
+  footer p {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  $color-purple: #3e0c71;
+  $color-light-purple: #a17fe0;
+  $color-black: #070506;
+  $color-white: #fefefe;
+
+  .ttl {
+    font-size: 28px;
+  }
+  /********************
+            ヘッダー
 *********************/
 
-  /***** PC ヘッダー非表示 ******/
-  .header {
+  /* PC ヘッダー非表示 */
+  .header, .pc-burger-wrapper {
     display: none;
   }
 
-  /***** SPバーガーボタン表示 ******/
+  /* SPバーガーボタン表示 */
   .sp-burger {
     display: block;
     z-index: 300;
-    padding: 30px 58px;
-    background-color: $color-black;
-    position: relative;
+    padding: 20px 18px;
+    position: fixed;
+    top: 0;
+    right: 0;
 
     .bar {
       display: block;
@@ -28,6 +149,7 @@
       background-color: $color-white;
       margin-right: 0;
       margin-left: auto;
+      transition: 0.8s;
     }
 
     .bar-top,
@@ -35,8 +157,8 @@
       margin-bottom: 5px;
     }
 
-    /***** バーガーボタンをクロスに
-            JSでクラスcross追加される ******/
+    /* バーガーボタンをクロスに
+            JSでクラスcross追加される */
     &.cross {
       .bar-top {
         transform: rotate(40deg) translate(0px, 9px);
@@ -49,11 +171,8 @@
       }
     }
   }
-  .no-scroll {
-    overflow: hidden;
-  }
 
-  /***** SPバーガーナビ内 *****/
+  /* SPバーガーナビ内 */
   .sp-open-wrapper {
     display: none;
     height: 100vh;
@@ -70,12 +189,124 @@
       padding-top: 20%;
 
       &-li {
-        list-style: none;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-40%);
       }
       &-item {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-size: 20px;
       }
+    }
+
+    .sp-menu-contact {
+      margin-top: 70px;
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &-btn {
+        font-size: 20px;
+        padding: 12px 60px;
+      }
+    }
+  }
+
+  /********************
+            fv
+*********************/
+  .fv {
+    margin: 20px auto 0;
+    &-text {
+      h1 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+  /********************
+            about
+  *********************/
+  .about {
+    &-sp-box {
+      height: 140px;
+      margin: -100px 0 0 auto;
+    }
+    &-contents {
+      &-ttl {
+        padding-left: 20px;
+      }
+      .slider-item {
+        height: 470px !important;
+        margin-right: 15px;
+
+        h6 {
+          font-size: 13px;
+        }
+        hr {
+          width: 90%;
+        }
+        ul,
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  /********************
+             service
+  *********************/
+  .service {
+    background-size: cover;
+    margin-top: 0;
+    padding: 0;
+
+    &-contents {
+      padding: 100px 0;
+      &-ttl {
+        padding-left: 20px;
+      }
+      &-group {
+        &-coding,
+        &-design {
+          width: 280px;
+
+          h5{
+            font-size: 16px;
+          }
+          p{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  /********************
+             works
+  *********************/
+  .works {
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &-contents{
+      width: 80%;
+     &-list-item {
+       margin-top: 25px;
+     }
+   }
+}
+  /********************
+             contact
+  *********************/
+  .contact{
+    padding: 60px 0 100px;
+    &-contents {
+      width: 80%;
     }
   }
 }

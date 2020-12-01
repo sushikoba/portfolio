@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design Haru</title>
+    <title>Haru Portfolio | Web Design Haru</title>
     <!--ここからOGP-->
     <meta property="og:url" content=" https://sushikoba.github.io/portfolio/" />
     <meta property="og:type" content="website" />
@@ -92,7 +92,7 @@
                         <li class="sp-menu-item"><a class="scroll-btn" href="#navWorks">WORKS</a></li>
                </ul>
                 <div class="sp-menu-contact">
-                    <a class="sp-menu-contact-btn" href="./Contact/contact.html">Contact</a>
+                    <a class="sp-menu-contact-btn link-btn" href="./Contact/contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -112,6 +112,10 @@
 
 <!-----ABOUT------>
         <section class="about" id="navAbout">
+            <div class="about-sp">
+                <div class="about-sp-img col-6"><img class="img-fluid" src="./img/me-sp.jpg" alt=""></div>
+                <div class="about-sp-box col-8"></div>
+            </div>
             <div class="about-contents">
                 <h1 class="about-contents-ttl ttl">ABOUT ME</h1>
                 <!-----スライダー------>
@@ -121,7 +125,7 @@
                         <h6>Profile</h6>
                         <hr>
                         <ul>
-                            <li >名前: Tomoko</li>
+                            <li >名前: Tomoko Haru</li>
                             <li>生年月日: 1992年1月14日</li>
                             <li>出身地: 名古屋市</li>
                         </ul>
@@ -152,8 +156,7 @@
                         <h6>Message</h6>
                         <hr>
                        
-                        <p>学生の頃からアートが好きでデザインに関わる仕事ができることに誇りに思います。<br>
-                            コーディングはスクールなど通わず独学で学習してきました。
+                        <p>学生の頃からアートが好きでデザインに関わる仕事ができることに誇りに思います。コーディングはスクールなど通わず独学で学習してきました。
                         </p>
                         <p>どのような分野のウェブ制作のお手伝いをさせていただくことは可能ですが、<br>
                         私の経験を活かせる、かつ知識にも自信がある美容外科等含め医療/介護系、留学や英会話スクール等の外国語系を得意としています。
@@ -175,29 +178,27 @@
             <div class="service-contents">
                 <h1 class="service-contents-ttl ttl">SERVICE</h1>
                 <div class="service-contents-group">
-                    <!-----CODING------>
-                    <div class="service-contents-group-coding">
-                        <h5>CODING</h5>
-                        <hr>
-                        <p>デザインデータから、HTML/CSSコーディングを行います。
-                            JavaScript(jQuery)を使用して動きをつけることも可能です。
-                            <br>モバイルサイズのデザインにも対応しております。
-                        </p>
-                        <p class="price">1P  ¥ 10,000〜 (コーディングのみ)</p> 
-                    </div>
-                    <!-----WEB DESIGN------>
-                    <div class="service-contents-group-design">
-                        <h5>WEB DESIGN</h5>
-                        <hr>
-                        <p>制作するサイトの目的に合わせてデザイン作成・コーディングします。
-                            画像編集も対応可能です。<br>デザインのみも可能です。
-                        <br><br><br></p>
-                        <p class="price">1P ¥ 30,000〜 (デザイン＋コーディング)</p>
-                    </div>
+                        <!-----CODING------>
+                        <div class="service-contents-group-coding">
+                            <h5>CODING</h5>
+                            <hr>
+                            <p>デザインデータから、HTML/CSSコーディングを行います。
+                                JavaScript(jQuery)を使用して動きをつけることも可能です。
+                                <br>モバイルサイズのデザインにも対応しております。
+                            </p>
+                            <p class="price">1P  ¥ 10,000〜 (コーディングのみ)</p> 
+                        </div>
+                        <!-----WEB DESIGN------>
+                        <div class="service-contents-group-design">
+                            <h5>WEB DESIGN</h5>
+                            <hr>
+                            <p>制作するサイトの目的に合わせてデザイン作成・コーディングします。
+                                画像編集も対応可能です。<br>デザインのみも可能です。
+                            </p>
+                            <p class="price">1P ¥ 30,000〜 (デザイン＋コーディング)</p>
+                        </div>
                 </div>
-
             </div>
-
         </section>
 
 <!-----WORKS------>
@@ -205,22 +206,119 @@
             <div class="works-contents" id="navWorks">
                 <h1 class="works-contents-ttl ttl">WORKS</h1>
                 <ul class="works-contents-list">
+                    <!----- モダルボタン01 ----->
                     <li class="works-contents-list-item">
-                        <img src="./img/portfolio-btn.jpg" alt="">
+                        <a href="" class="modal-btn" data-toggle="modal" data-target="modal01">
+                        <img class="img-fluid" src="./img/portfolio-btn.jpg" alt=""></a>
                     </li>
+                    <!----- モダルボタン02 ----->
                     <li class="works-contents-list-item">
-                        <img src="./img/salon-btn.jpg" alt="">
+                        <a href="" class="modal-btn" data-toggle="modal" data-target="modal02">
+                        <img class="img-fluid" src="./img/salon-btn.jpg" alt=""></a>
                     </li>
+                    <!----- モダルボタン03 ----->
                     <li class="works-contents-list-item">
-                        <img src="./img/home-btn.jpg" alt="">
+                        <a href="" class="modal-btn" data-toggle="modal" data-target="modal03">
+                        <img class="img-fluid" src="./img/home-btn.jpg" alt=""></a>
                     </li>
+                    <!----- モダルボタン04 ----->
                     <li class="works-contents-list-item">
-                        <img src="./img/digsmile-btn.jpg" alt="">
+                        <a href="" class="modal-btn" data-toggle="modal" data-target="modal04">
+                        <img class="img-fluid" src="./img/digsmile-btn.jpg" alt=""></a>
                     </li>
+                    <!----- モダルボタン05 ----->
                     <li class="works-contents-list-item">
-                        <img src="./img/cresta-btn.jpg" alt="">
+                        <a href="" class="modal-btn" data-toggle="modal" data-target="modal05">
+                        <img class="img-fluid" src="./img/cresta-btn.jpg" alt=""></a>
                     </li>
                 </ul>
+
+                <!----- モダル内 ----->
+                <div class="modal-wrapper">
+                    <!----- モダル01 ----->
+                    <div class="modal modal-style" id="modal01">
+                        <span class="modal-close"></span>
+                        <div class="modal-inner">
+                            <div class="modal-inner-img">
+                                <div class="modal-inner-img-pc"><img src="./img/salon-pc.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-tb"><img src="./img/salon-tb.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-sp"><img src="./img/salon-sp.png" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="modal-inner-contents">
+                                <h5>PORTFOLIO</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- モダル02 ----->
+                    <div class="modal modal-style" id="modal02">
+                        <span class="modal-close"></span>
+                        <div class="modal-inner">
+                            <div class="modal-inner-img">
+                                <div class="modal-inner-img-pc"><img src="./img/salon-pc.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-tb"><img src="./img/salon-tb.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-sp"><img src="./img/salon-sp.png" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="modal-inner-contents">
+                                <h5>SALON DE BEAUTE</h5>
+                                <p>架空の美容院のホームページです。<br>
+                                    クリスタさんの企画（<a href="https://crestadesign.org/webdesign-work01/">https://crestadesign.org/webdesign-work01/</a>）より作成しました。<br>
+                                    デザイン&コーディング  by Haru</p>
+                                <div class="modal-inner-contents-link"><a href="https://sushikoba.github.io/Salon-de-beaute-02/">VIEW MORE</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- モダル03 ----->
+                    <div class="modal modal-style" id="modal03">
+                        <span class="modal-close"></span>
+                        <div class="modal-inner">
+                            <div class="modal-inner-img">
+                                <div class="modal-inner-img-pc"><img src="./img/home-pc.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-tb"><img src="./img/home-tb.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-sp"><img src="./img/home-sp.png" alt="" class="img-fluid"></div>
+                           </div>
+                            <div class="modal-inner-contents">
+                                <h5>HOME REIWA</h5>
+                                <p>架空の老人ホームのホームページです。<br>
+                                    企画・デザイン・コーディング  by Haru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- モダル04 ----->
+                    <div class="modal modal-style" id="modal04">
+                        <span class="modal-close"></span>
+                        <div class="modal-inner">
+                            <div class="modal-inner-img">
+                                <div class="modal-inner-img-pc"><img src="./img/digsmile-pc.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-tb"><img src="./img/digsmile-tb.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-sp"><img src="./img/digsmile-sp.png" alt="" class="img-fluid"></div>
+                             </div>
+                            <div class="modal-inner-contents">
+                                <h5>DIGSMILE.inc</h5>
+                                <p>クリスタさんの企画・デザイン（<a href="https://crestadesign.org/cording-third/">https://crestadesign.org/cording-third/</a>）よりコーディングしました。<br>
+                                    コーディング  by Haru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----- モダル05 ----->
+                    <div class="modal modal-style" id="modal05">
+                        <span class="modal-close"></span>
+                        <div class="modal-inner">
+                            <div class="modal-inner-img">
+                                <div class="modal-inner-img-pc"><img src="./img/cresta-pc.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-tb"><img src="./img/cresta-tb.png" alt="" class="img-fluid"></div>
+                                <div class="modal-inner-img-sp"><img src="./img/cresta-sp.png" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="modal-inner-contents">
+                                <h5>CRESTA DESIGN</h5>
+                                <p>クリスタさんの企画・デザイン（<a href="https://crestadesign.org/cording-second/">https://crestadesign.org/cording-second/</a>）よりコーディングしました。<br>
+                                    コーディング  by Haru</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!----- //モダル内 ----->
             </div>
         </section>
 
