@@ -82,6 +82,23 @@
   .works-contents {
     width: 70%;
   }
+  .works-contents .modal-inner-img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .works-contents .modal-inner-img-pc {
+    width: 370px;
+    margin-bottom: 20px;
+  }
+  .works-contents .modal-inner-img-tb {
+    width: 190px;
+  }
+  .works-contents .modal-inner-img-sp {
+    width: 95px;
+  }
   /********************
             contact
   *********************/
@@ -248,6 +265,7 @@
   .works {
     padding-top: 70px;
     padding-bottom: 100px;
+    /* modal */
   }
   .works-contents {
     width: 80%;

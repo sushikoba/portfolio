@@ -323,7 +323,8 @@ a {
   background: url("../img/about-bg.jpg") no-repeat;
   background-size: cover;
 
-  &-sp{  /* SP用非表示 */
+  &-sp {
+    /* SP用非表示 */
     display: none;
   }
 
@@ -418,35 +419,34 @@ a {
     max-width: 700px;
     font-weight: 400;
 
-      &-ttl {
-        text-shadow: 0px 0px 5px $color-black;
-      }
+    &-ttl {
+      text-shadow: 0px 0px 5px $color-black;
+    }
 
-      &-group {
-        display: flex;
-        margin-top: 70px;
+    &-group {
+      display: flex;
+      margin-top: 70px;
 
-        &-coding,
-        &-design {
-          width: 270px;
+      &-coding,
+      &-design {
+        width: 270px;
 
-          h5 {
-            font-size: 20px;
-            margin-bottom: 5px;
-          }
-
-          hr {
-            margin-top: 0;
-            margin-bottom: 14px;
-            border-top: 2px solid $color-light-purple;
-          }
-
+        h5 {
+          font-size: 20px;
+          margin-bottom: 5px;
         }
 
-        &-coding {
-          margin-right: 80px;
+        hr {
+          margin-top: 0;
+          margin-bottom: 14px;
+          border-top: 2px solid $color-light-purple;
         }
       }
+
+      &-coding {
+        margin-right: 80px;
+      }
+    }
   }
 }
 /********************
@@ -485,14 +485,14 @@ a {
       z-index: 500;
 
       &-close {
-        /*以下 × のCSSコード*/
+        /*以下 × のCSSコード＆position*/
         cursor: pointer;
         display: block;
         width: 40px;
         height: 40px;
         position: absolute;
-        right: 50px;
-        top: 30px;
+        right: 15px;
+        top: 15px;
 
         &:before,
         &:after {
@@ -533,21 +533,17 @@ a {
           &-pc {
             width: 530px;
           }
-            &-tb {
-              width: 250px;
-            }
-            &-sp {
-              width: 130px;
-            }
+          &-tb {
+            width: 250px;
           }
-        
+          &-sp {
+            width: 130px;
+          }
+        }
 
         &-contents {
-          position: absolute;
-          bottom: 40px;
-          left: 40%;
-          transform: translateX(-40%);
-          -webkit-transform: translateX(-40%);
+          max-width: 70%;
+          margin: 30px auto;
 
           h5 {
             font-size: 20px;
