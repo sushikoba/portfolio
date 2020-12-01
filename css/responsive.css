@@ -268,19 +268,9 @@
   }
   .works-contents {
     width: 80%;
-    /* modal */
   }
   .works-contents-list-item {
     margin-top: 25px;
-  }
-  .works-contents .modal-inner-img-pc {
-    width: 270px;
-  }
-  .works-contents .modal-inner-img-tb {
-    width: 120px;
-  }
-  .works-contents .modal-inner-img-sp {
-    width: 75px;
   }
   /********************
              contact
